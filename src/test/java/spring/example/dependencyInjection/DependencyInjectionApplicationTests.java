@@ -16,6 +16,7 @@ class DependencyInjectionApplicationTests {
 	MyController myController;
 
 	@Test
+		// This test checks if the MyController bean is correctly autowired and invokes its sayHello method.
 	void testAutowireOfController() {
 		System.out.println(myController.sayHello());
 	}

@@ -17,4 +17,13 @@ public class MyController {
         System.out.println("Hello from MyController");
         return "woop";
     }
+
+    public void beforeInit() {
+        System.out.println("Before Init - Called by Bean Post Processor");
+    }
+
+    public void afterInit() {
+        System.out.println("After Init called by Bean Post Processor");
+    }
+
 }
