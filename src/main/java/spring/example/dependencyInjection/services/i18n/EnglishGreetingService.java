@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 import spring.example.dependencyInjection.services.GreetingsService;
 
-@Profile("EN")
+@Profile({"EN", "default"})
 @Service("i18nService")
 public class EnglishGreetingService implements GreetingsService {
 
